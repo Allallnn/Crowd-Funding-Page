@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --Green-400: hsl(176, 50%, 47%);
+    --Green-700: hsl(176, 72%, 28%);
+    --Black: hsl(0, 0%, 0%);
+    --Gray-500: hsl(0, 0%, 48%);
+}
+
+body {
+    font-family: "Commissioner", sans-serif;
+}
+
+nav {
+    background-image: url(assets/Image20250819171355.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 35rem;
+    width: 120rem;
+    padding: 5rem 13rem;
+}
+
+nav div {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul {
+    display: flex;
+    gap: 1rem;
+}
+
+nav ul li {
+    list-style: none;
+    font-size: 18px;
+    color: white;
+}
+
+nav #logo-img {
+    width: 10rem;
+    height: 1.5rem;
+}
+
+#hamburger-img {
+    display: none;
+}
+/* Main */
+main{
+    display: flex;
+        position: relative;
+        flex-direction: column;
+        align-items: center;
+}
+
+main section{
+    width: 50rem;
+}
+/* Section 1 */
+.main-section-1{
+    border: solid red 1px;
+    background-color: white;
+    position: absolute;
+    position: relative;
+    top: -5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem;
+}
+#mastercraft-img{
+    position: absolute;
+    top: -2rem;
+    width: 4rem;
+    height: 4rem;
+}
+.main-section-1 h1{
+    padding-bottom: 1rem;
+    font-size: 2.25rem;
+}
+.main-section-1 p{
+    font-size: 20px;
+    color: var(--Gray-500);
+    padding-bottom: 1rem;
+}
+.main-section-1 div{
+    display: flex;
+    gap: 10rem;
+}
+.main-section-1 #button-1{
+border-radius: 2rem;
+padding: 1.5rem;
+background-color: var(--Green-700);
+}
+
+
+@media (max-width:428px) {
+    body {
+        /* overflow-x: hidden; */
+    }
+
+    nav {
+        background-image: url(assets/Image20250819171345.jpg);
+        background-repeat: no-repeat;
+        background-size: 25rem;
+        padding: 1rem;
+    }
+
+    nav div {
+        display: flex;
+        justify-content: space-between;
+        width: 22rem;
+    }
+
+    nav ul li {
+        display: none;
+    }
+
+    #hamburger-img {
+        display: block;
+        width: 1rem;
+        height: 1rem;
+    }
+}
