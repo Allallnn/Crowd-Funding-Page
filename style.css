@@ -120,9 +120,12 @@ font-weight: 700;
 }
 /* Section 2 */
 .main-section-2{
+    position: absolute;
+    top: 15rem;
     background-color: white;
         padding: 4rem;
         border-radius: 1rem;
+        margin-bottom: 2rem;
 }
 .main-section-2 #div-1{
     display: flex;
@@ -144,12 +147,98 @@ background-color: rgb(212, 212, 212);
 border-radius: 2rem;
 }
 .main-section-2 #div-2 p{
-background-color: var(--Green-400);
-color: var(--Green-400);
+background-color: var(--Green-700);
+color: var(--Green-700);
 border-radius: 2rem;
 width: 75%;
 text-align: center;
 }
+/* Section 3 */
+.main-section-3{
+    position: absolute;
+    top: 34rem;
+        background-color: white;
+                padding: 4rem;
+        border-radius: 1rem;
+        border-color: var(--Gray-500);
+}
+.main-section-3 p{
+    color: var(--Gray-500);
+}
+#main-section-3-main-div h3{
+font-size: 1.25rem;
+padding-bottom: 2rem;
+}
+#main-section-3-main-div p{
+    padding-bottom: 2rem;
+}
+.main-section-3-div-1 , .main-section-3-div-2{
+    margin-bottom: 2rem;
+}
+.main-section-3-div-1, .main-section-3-div-2, .main-section-3-div-3{
+    border: solid 1px var(--Gray-500);
+    padding: 2rem;
+border-radius: 1rem;
+padding-bottom: 1rem;
+}
+.main-section-3-div-1 #div-1 , .main-section-3-div-2 #div-1 , .main-section-3-div-3 #div-1 {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+}
+.main-section-3-div-1 #div-1 h2, .main-section-3-div-2 #div-1 h2, .main-section-3-div-3 #div-1 h2 {
+font-size: 1.25rem;
+
+}
+.main-section-3-div-1 #div-1 h3, .main-section-3-div-2 #div-1 h3, .main-section-3-div-3 #div-1 h3 {
+color: var(--Green-400);
+font-weight: 500;
+}
+.main-section-3-div-1 p, .main-section-3-div-2 p, .main-section-3-div-3 p  {
+line-height: 1.5rem;
+padding-bottom: 1rem;
+}
+
+.main-section-3-div-1 #div-2 , .main-section-3-div-2 #div-2 , .main-section-3-div-3 #div-2 {
+    display: flex;
+    justify-content: space-between;
+}
+.main-section-3 #div-2 span{
+display: flex;
+align-items: center;
+font-size: 2rem;
+gap: 0.5rem;
+font-weight: 700;
+}
+
+.main-section-3 span p{
+    font-size: 16px;
+    font-weight: 400;
+
+}
+.main-section-3 button{
+    background-color: var(--Green-400);
+    border-radius: 2rem;
+    color: white;
+    font-weight: 500;
+    padding: 1rem;
+}
+
+.main-section-3-div-3 h2{
+color: var(--Gray-500);
+}
+.main-section-3-div-3 #div-1 h3{
+    opacity: 50%;
+}
+.main-section-3-div-3 #div-2 span{
+opacity: 50%;
+}
+.main-section-3 #div-2 button{
+    background-color: var(--Gray-500);
+}
+
+
+
 
 @media (max-width:428px) {
     body {
@@ -257,5 +346,10 @@ margin-left: -3rem;
 width: 75%;
 text-align: center;
 font-size: 10px;
+}
+/* Section 3 */
+.main-section-3 {
+    position: absolute;
+    width: 20rem;
 }
 }
