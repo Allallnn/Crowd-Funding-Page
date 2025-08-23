@@ -18,16 +18,35 @@ body {
     overflow-x: hidden;
     background-color: rgb(247, 247, 247);
 }
-button{
-    border: none;
+/* Active State */
+li:hover{
+    cursor: pointer;
 }
+.main-section-1 #button-1:hover{
+    cursor: pointer;
+    background-color: var(--Green-700);
+}
+.main-section-1 button:hover{
+    cursor: pointer;
+}
+.main-section-3-div-1 #div-2 button:hover{
+    background-color: var(--Green-700);
+    cursor: pointer;
+}
+.main-section-3-div-3 #div-2 button
+
+
+button {
+border: none;
+}
+
 nav {
     background-image: url(assets/Image20250819171355.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 35rem;
-    width: 120rem;
-    padding: 5rem 13rem;
+    width: 100%;
+padding: 5rem 11rem 5rem 15rem; 
 }
 
 nav div {
@@ -37,37 +56,40 @@ nav div {
 
 nav ul {
     display: flex;
-    gap: 1rem;
+    gap: 2rem;
 }
 
 nav ul li {
     list-style: none;
-    font-size: 18px;
+    font-size: 17px;
     color: white;
 }
 
 nav #logo-img {
     width: 10rem;
     height: 1.5rem;
+
 }
 
 #hamburger-img {
     display: none;
 }
+
 /* Main */
-main{
+main {
     display: flex;
-        position: relative;
-        flex-direction: column;
-        align-items: center;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
 }
 
-main section{
+main section {
     width: 50rem;
 }
+
 /* Section 1 */
-.main-section-1{
-background-color: white;
+.main-section-1 {
+    background-color: white;
     position: absolute;
     position: relative;
     top: -5rem;
@@ -77,146 +99,193 @@ background-color: white;
     padding: 4rem;
     border-radius: 1rem;
 }
-#mastercraft-img{
+
+#mastercraft-img {
     position: absolute;
     top: -2rem;
     width: 4rem;
     height: 4rem;
 }
 
-.main-section-1 h1{
+.main-section-1 h1 {
     padding-bottom: 1rem;
     font-size: 2rem;
 }
-.main-section-1 p{
+
+.main-section-1 p {
     font-size: 18px;
     color: var(--Gray-500);
     padding-bottom: 2rem;
 }
-.main-section-1 div{
+
+.main-section-1 div {
     display: flex;
     gap: 20rem;
 }
-.main-section-1 #button-1{
-border-radius: 5rem;
-width: 14rem;
-height: 3rem;
-background-color: var(--Green-400);
-color: white;
-font-weight: 700;
-font-size: 15px;
+
+.main-section-1 #button-1 {
+    border-radius: 5rem;
+    width: 14rem;
+    height: 3rem;
+    background-color: var(--Green-400);
+    color: white;
+    font-weight: 700;
+    font-size: 15px;
 }
 
-.main-section-1 #button-2{
-border-radius: 2rem;
-width: 11rem;
-display: flex;
-align-items: center;
-gap: 1rem;
-background-color: rgb(212, 212, 212);
-color: var(--Gray-500);
-font-size: 15px;
-font-weight: 700;
+.main-section-1 #button-2 {
+    border-radius: 2rem;
+    width: 11rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background-color: rgb(212, 212, 212);
+    color: var(--Gray-500);
+    font-size: 15px;
+    font-weight: 700;
 }
+
 /* Section 2 */
-.main-section-2{
+.main-section-2 {
     position: absolute;
     top: 15rem;
     background-color: white;
-        padding: 4rem;
-        border-radius: 1rem;
-        margin-bottom: 2rem;
+    padding: 4rem;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
 }
-.main-section-2 #div-1{
+
+.main-section-2 #div-1 {
     display: flex;
     gap: 4rem;
 
     padding-bottom: 2rem;
     text-align: start;
 }
-.main-section-2 #div-1 span{
+
+.main-section-2 #div-1 span {
     font-weight: 700;
     font-size: 2.5rem;
 }
-.main-section-2 #div-1 span p{
+
+.main-section-2 #div-1 span p {
     font-weight: 400;
     font-size: 18px;
 }
-.main-section-2 #div-2{
-background-color: rgb(212, 212, 212);
-border-radius: 2rem;
+
+.main-section-2 #div-2 {
+    background-color: rgb(212, 212, 212);
+    border-radius: 2rem;
 }
-.main-section-2 #div-2 p{
-background-color: var(--Green-700);
-color: var(--Green-700);
-border-radius: 2rem;
-width: 75%;
-text-align: center;
+
+.main-section-2 #div-2 p {
+    background-color: var(--Green-700);
+    color: var(--Green-700);
+    border-radius: 2rem;
+    width: 75%;
+    text-align: center;
 }
+
 /* Section 3 */
-.main-section-3{
+.main-section-3 {
     position: absolute;
     top: 34rem;
-        background-color: white;
-                padding: 4rem;
-        border-radius: 1rem;
-        border-color: var(--Gray-500);
+    background-color: white;
+    padding: 4rem;
+    border-radius: 1rem;
 }
-.main-section-3 p{
+
+.main-section-3 p {
     color: var(--Gray-500);
 }
-#main-section-3-main-div h3{
-font-size: 1.25rem;
-padding-bottom: 2rem;
-}
-#main-section-3-main-div p{
+
+#main-section-3-main-div h3 {
+    font-size: 1.25rem;
     padding-bottom: 2rem;
 }
-.main-section-3-div-1 , .main-section-3-div-2{
+
+#main-section-3-main-div p {
+    padding-bottom: 2rem;
+    line-height: 1.75;
+    font-size: 17px;
+}
+
+.main-section-3-div-1,
+.main-section-3-div-2 {
     margin-bottom: 2rem;
 }
-.main-section-3-div-1, .main-section-3-div-2, .main-section-3-div-3{
-    border: solid 1px var(--Gray-500);
+
+.main-section-3-div-1,
+.main-section-3-div-2,
+.main-section-3-div-3 {
+    border: 1px solid rgb(218, 218, 218);
     padding: 2rem;
-border-radius: 1rem;
-padding-bottom: 1rem;
+    border-radius: 1rem;
+    padding-bottom: 1rem;
 }
-.main-section-3-div-1 #div-1 , .main-section-3-div-2 #div-1 , .main-section-3-div-3 #div-1 {
+
+.main-section-3 #div-2 p {
+    display: flex;
+    align-items: center;
+    padding-bottom: 0;
+}
+
+.main-section-3 #div-2 button {
+    background-color: var(--Green-400);
+}
+
+.main-section-3-div-1 #div-1,
+.main-section-3-div-2 #div-1,
+.main-section-3-div-3 #div-1 {
     display: flex;
     justify-content: space-between;
     padding-bottom: 1rem;
 }
-.main-section-3-div-1 #div-1 h2, .main-section-3-div-2 #div-1 h2, .main-section-3-div-3 #div-1 h2 {
-font-size: 1.25rem;
+
+.main-section-3-div-1 #div-1 h2,
+.main-section-3-div-2 #div-1 h2,
+.main-section-3-div-3 #div-1 h2 {
+    font-size: 1.25rem;
 
 }
-.main-section-3-div-1 #div-1 h3, .main-section-3-div-2 #div-1 h3, .main-section-3-div-3 #div-1 h3 {
-color: var(--Green-400);
-font-weight: 500;
-}
-.main-section-3-div-1 p, .main-section-3-div-2 p, .main-section-3-div-3 p  {
-line-height: 1.5rem;
-padding-bottom: 1rem;
+
+.main-section-3-div-1 #div-1 h3,
+.main-section-3-div-2 #div-1 h3,
+.main-section-3-div-3 #div-1 h3 {
+    color: var(--Green-400);
+    font-weight: 500;
 }
 
-.main-section-3-div-1 #div-2 , .main-section-3-div-2 #div-2 , .main-section-3-div-3 #div-2 {
+.main-section-3-div-1 p,
+.main-section-3-div-2 p,
+.main-section-3-div-3 p {
+    line-height: 1.75rem;
+    padding-bottom: 1rem;
+    font-size: 17px;
+}
+
+.main-section-3-div-1 #div-2,
+.main-section-3-div-2 #div-2,
+.main-section-3-div-3 #div-2 {
     display: flex;
     justify-content: space-between;
 }
-.main-section-3 #div-2 span{
-display: flex;
-align-items: center;
-font-size: 2rem;
-gap: 0.5rem;
-font-weight: 700;
+
+.main-section-3 #div-2 span {
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    gap: 0.5rem;
+    font-weight: 700;
 }
 
-.main-section-3 span p{
+.main-section-3 span p {
     font-size: 16px;
     font-weight: 400;
 
 }
-.main-section-3 button{
+
+.main-section-3 #div-2 button {
     background-color: var(--Green-400);
     border-radius: 2rem;
     color: white;
@@ -224,19 +293,30 @@ font-weight: 700;
     padding: 1rem;
 }
 
-.main-section-3-div-3 h2{
-color: var(--Gray-500);
-}
-.main-section-3-div-3 #div-1 h3{
-    opacity: 50%;
-}
-.main-section-3-div-3 #div-2 span{
-opacity: 50%;
-}
-.main-section-3 #div-2 button{
-    background-color: var(--Gray-500);
+.button-1 , .button-2{
+    background-color: var(--Green-400);
 }
 
+.main-section-3-div-3 h2 {
+    color: var(--Gray-500);
+}
+
+.main-section-3-div-3 #div-1 h3 {
+    opacity: 50%;
+}
+
+.main-section-3-div-3 #div-2 span {
+    opacity: 50%;
+}
+
+.main-section-3-div-3 #div-2 button {
+background-color: var(--Gray-500);
+}
+
+.main-section-3-div-1 button,
+.main-section-3-div-2 button {
+    background-color: var(--Green-400);
+}
 
 
 
@@ -267,89 +347,142 @@ opacity: 50%;
         width: 1rem;
         height: 1rem;
     }
+
     /* Section - 1 */
     .main-section-1 {
         width: 20rem;
-            top: -20rem;
+        top: -20rem;
     }
-    .main-section-1 h1{
+
+    .main-section-1 h1 {
         text-align: center;
         font-size: 1.25rem;
     }
-    .main-section-1 p{
+
+    .main-section-1 p {
         text-align: center;
         width: 18rem;
         font-size: 14.5px;
     }
-    .main-section-1 div{
-    display: flex;
-gap: 2rem;
-}
-    .main-section-1 #button-1{
-border-radius: 5rem;
-width: 12rem;
-height: auto;
-background-color: var(--Green-400);
-color: white;
-font-weight: 700;
-font-size: 13px;
-}
 
-.main-section-1 #button-2{
-border-radius: 2rem;
-width: 0;
-display: flex;
-align-items: center;
-background-color: rgb(212, 212, 212);
-color: var(--Gray-500);
-font-size: 0;
-font-weight: 700;
-margin-right: 4rem;
-}
+    .main-section-1 div {
+        display: flex;
+        gap: 2rem;
+    }
 
-/* Section 2 */
-.main-section-2{
-    top: 5rem;
-    position: absolute;
-    background-color: white;
+    .main-section-1 #button-1 {
+        border-radius: 5rem;
+        width: 12rem;
+        height: auto;
+        background-color: var(--Green-400);
+        color: white;
+        font-weight: 700;
+        font-size: 13px;
+    }
+
+    .main-section-1 #button-2 {
+        border-radius: 2rem;
+        width: 0;
+        display: flex;
+        align-items: center;
+        background-color: rgb(212, 212, 212);
+        color: var(--Gray-500);
+        font-size: 0;
+        font-weight: 700;
+        margin-right: 4rem;
+    }
+
+    /* Section 2 */
+    .main-section-2 {
+        top: 2rem;
+        position: absolute;
+        background-color: white;
         padding: 4rem;
         border-radius: 1rem;
         width: 20rem;
-}
-.main-section-2 #div-1{
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+    }
 
-    padding-bottom: 2rem;
-    text-align: center;
-}
-.main-section-2 #div-1 span{
-    font-weight: 700;
-    font-size: 2.5rem;
+    .main-section-2 #div-1 {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
 
-}
-.main-section-2 #div-1 span p{
-    font-weight: 400;
-    font-size: 18px;
+        padding-bottom: 2rem;
+        text-align: center;
+    }
+
+    .main-section-2 #div-1 span {
+        font-weight: 700;
+        font-size: 2rem;
+
+    }
+
+    hr {
+        margin: 0 auto;
+        width: 5rem;
+    }
+
+    .main-section-2 #div-1 span p {
+        font-weight: 400;
+        font-size: 14px;
         padding-top: 1rem;
+    }
+
+    .main-section-2 #div-2 {
+        background-color: rgb(212, 212, 212);
+        border-radius: 2rem;
+        width: 18rem;
+        display: flex;
+        flex-direction: column;
+        margin-left: -3rem;
+    }
+
+    .main-section-2 #div-2 p {
+        width: 75%;
+        text-align: center;
+        font-size: 10px;
+    }
+
+    /* Section 3 */
+    .main-section-3 {
+        position: absolute;
+        width: 20rem;
+        top: 34rem;
+        padding: 1rem;
+    }
+#main-section-3-main-div p{
+    font-size: 12.5px;
 }
-.main-section-2 #div-2{
-background-color: rgb(212, 212, 212);
-border-radius: 2rem;
-width: 18rem;
+
+.main-section-3-div-1 #div-1 , .main-section-3-div-2 #div-1 , .main-section-3-div-3 #div-1 {
 display: flex;
 flex-direction: column;
-margin-left: -3rem;
+
 }
-.main-section-2 #div-2 p{
-width: 75%;
-text-align: center;
-font-size: 10px;
+
+.main-section-3-div-1 #div-1 h2, .main-section-3-div-2 #div-1 h2, .main-section-3-div-3 #div-1 h2 {
+font-size: 17px;
+padding-bottom: 0.5rem;
 }
-/* Section 3 */
-.main-section-3 {
-    position: absolute;
-    width: 20rem;
+.main-section-3-div-1 #div-1 h3, .main-section-3-div-2 #div-1 h3, .main-section-3-div-3 #div-1 h3 {
+font-size: 17px;
 }
+
+
+.main-section-3-div-1 p , .main-section-3-div-2 p , .main-section-3-div-3 p {
+    font-size: 13.5px;
+}
+.main-section-3-div-1 #div-2, .main-section-3-div-2 #div-2, .main-section-3-div-3 #div-2{
+display: flex;
+flex-direction: column;
+}
+.main-section-3-div-1 span , .main-section-3-div-2 span , .main-section-3-div-3 span {
+    padding-bottom: 1.5rem;
+}
+
+.main-section-3-div-1 #div-2 button, .main-section-3-div-2 #div-2 button, .main-section-3-div-3 #div-2 button {
+width: 10rem;
+padding-bottom: 1rem;
+}
+
 }
