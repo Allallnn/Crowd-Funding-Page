@@ -37,7 +37,7 @@ li:hover{
 
 
 button {
-border: none;
+    border: none;
 }
 
 nav {
@@ -131,6 +131,7 @@ main section {
     color: white;
     font-weight: 700;
     font-size: 15px;
+        border: none;
 }
 
 .main-section-1 #button-2 {
@@ -143,6 +144,7 @@ main section {
     color: var(--Gray-500);
     font-size: 15px;
     font-weight: 700;
+        border: none;
 }
 
 /* Section 2 */
@@ -291,6 +293,7 @@ main section {
     color: white;
     font-weight: 500;
     padding: 1rem;
+    border: none;
 }
 
 .button-1 , .button-2{
@@ -484,5 +487,11 @@ flex-direction: column;
 width: 10rem;
 padding-bottom: 1rem;
 }
-
+.main-section-3 #div-2 button:hover {
+    background-color: var(--Green-400);
+    border-radius: 2rem;
+    color: white;
+    font-weight: 500;
+    padding: 1rem;
+}
 }
